@@ -1,0 +1,6 @@
+python-dotenv
+langchain
+openai
+tiktoken
+chromadb
+youtube-transcript-api
