@@ -10,7 +10,7 @@ from langchain.prompts import PromptTemplate
 
 
 def chunks_from_yt(url):
-    video = YoutubeLoader.from_youtube_channel(url)
+    video = YoutubeLoader.from_youtube_url(url)
     transcript = video.load()
 
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
